@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastChow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container nav">
+            <img class="logo" src="images/fastchow logo.png" alt="">
+            <nav>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Fast<span class="highlight">chow</span>
+                </h1>
+                <p>Satisfy Your Cravings With <br> A Few Clicks</p>
+                <button class="btn">Order Now</button>
+            </div>
+
+
+            <div class="hero-image">
+                <img src="" alt="">
+                <img class="highlight" src="images/burger-img.png.png" alt="">
+            </div>
+
+            <img class="floating-img" src="images/what are you waiting for.png" alt="">
+        </div>
+    </section>
+
+    <!-- WHY SECTION -->
+    <section id="about-us" class="why-section">
+        <div class="container">
+            <h2 class="section-title">Why <span>Fastchow?</span></h2>
+
+            <div class="why-grid">
+                <!-- Item 1 -->
+                <div class="why-card">
+                    <div class="why-img">
+                        <img src="images/Great Deals & Offers.png" alt="Great Deals">
+                    </div>
+                    <h3>Great Deals & Offers</h3>
+                    <p>
+                        We want to show you some love by giving amazing discounts
+                        on our food and good deals!
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="why-card">
+                    <div class="why-img">
+                        <img src="images/Quick Delivery.png" alt="Quick Delivery">
+                    </div>
+                    <h3>Quick Delivery</h3>
+                    <p>
+                        Our riders are swift and reliable, bringing your food
+                        to your doorstep as fast as possible.
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="why-card">
+                    <div class="why-img">
+                        <img src="images/Self Pick-Up.png" alt="Self Pickup">
+                    </div>
+                    <h3>Self Pick-Up</h3>
+                    <p>
+                        Pick up your tasty meal in-store or have it delivered
+                        to your doorstep.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="contact-us" class="footer">
+        <div class="container footer-top">
+            <div class="footer-logo">
+                <img src="images/fastchow logo.png" alt="">
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+
+            <div class="footer-social">
+                <p>Reach Out</p>
+                <div class="social-icons">
+                    <a href="https://wechat.com" class="fa fa-wechat" target="_blank"></a>
+                    <a href="https://whatsapp.com" class="fa fa-whatsapp" target="_blank"></a>
+                    <a href="https://instagram.com" class="fa fa-instagram" target="_blank"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 . Powered by <strong>Fastchow</strong>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle("active");
+    });
+
+</script>
